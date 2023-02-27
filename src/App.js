@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import store from "./redux/store";
 import { useDispatch, useSelector } from "react-redux";
+import Box from "./components/Box";
 
 function App() {
   const count = useSelector((state) => state.count);
@@ -16,6 +17,7 @@ function App() {
     <div>
       <div>{count}</div>
       <button onClick={increase}>증가</button>
+      <Box />
     </div>
   );
 }
